@@ -26,10 +26,10 @@ public class DefaultHandler implements HttpHandler {
             String uRI = exchange.getRequestURI().toString();
 
             if (uRI.equals("/")) {
-                filePathStr = "/Users/samhopkins/Desktop/FMSServer/web/index.html";
+                filePathStr = "/Users/samhopkins/IdeaProjects/FamilyMapServer/res/web/index.html";
             }
             else {
-                filePathStr = "/Users/samhopkins/Desktop/FMSServer/web/" + uRI;
+                filePathStr = "/Users/samhopkins/IdeaProjects/FamilyMapServer/res/web/" + uRI;
             }
 
             exchange.sendResponseHeaders(HttpURLConnection.HTTP_OK, 0);
