@@ -44,7 +44,7 @@ public class EventGenerator {
         String eventTypeToReturn;
 
         try {
-            FileReader fileReader = new FileReader(new File("/Users/samhopkins/Desktop/FMSServer/json/eventtypes.json"));
+            FileReader fileReader = new FileReader(new File("/Users/samhopkins/IdeaProjects/FamilyMapServer/res/json/eventtypes.json"));
             JsonParser jsonParser = new JsonParser();
             JsonObject rootObject = (JsonObject) jsonParser.parse(fileReader);
             JsonArray eventTypeArray = (JsonArray) rootObject.get("data");

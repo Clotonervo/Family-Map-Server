@@ -20,7 +20,7 @@ public class NameGenerator {
         Random rand = new Random();
 
         try {
-            FileReader fileReader = new FileReader(new File("/Users/samhopkins/Desktop/FMSServer/json/mnames.json"));
+            FileReader fileReader = new FileReader(new File("/Users/samhopkins/IdeaProjects/FamilyMapServer/res/json/mnames.json"));
             JsonParser jsonParser = new JsonParser();
             JsonObject rootObject = (JsonObject) jsonParser.parse(fileReader);
             JsonArray nameArray = (JsonArray) rootObject.get("data");
@@ -46,7 +46,7 @@ public class NameGenerator {
         Random rand = new Random();
 
         try {
-            FileReader fileReader = new FileReader(new File("/Users/samhopkins/Desktop/FMSServer/json/fnames.json"));
+            FileReader fileReader = new FileReader(new File("/Users/samhopkins/IdeaProjects/FamilyMapServer/res/json/fnames.json"));
             JsonParser jsonParser = new JsonParser();
             JsonObject rootObject = (JsonObject) jsonParser.parse(fileReader);
             JsonArray nameArray = (JsonArray) rootObject.get("data");
@@ -72,7 +72,7 @@ public class NameGenerator {
         Random rand = new Random();
 
         try {
-            FileReader fileReader = new FileReader(new File("/Users/samhopkins/Desktop/FMSServer/json/snames.json"));
+            FileReader fileReader = new FileReader(new File("/Users/samhopkins/IdeaProjects/FamilyMapServer/res/json/snames.json"));
             JsonParser jsonParser = new JsonParser();
             JsonObject rootObject = (JsonObject) jsonParser.parse(fileReader);
             JsonArray nameArray = (JsonArray) rootObject.get("data");

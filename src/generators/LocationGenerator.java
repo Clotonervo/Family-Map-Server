@@ -22,7 +22,7 @@ public class LocationGenerator {
         Events eventWithLocation = new Events();
 
         try {
-            FileReader fileReader = new FileReader(new File("/Users/samhopkins/Desktop/FMSServer/json/locations.json"));
+            FileReader fileReader = new FileReader(new File("/Users/samhopkins/IdeaProjects/FamilyMapServer/res/json/locations.json"));
             JsonParser jsonParser = new JsonParser();
             JsonObject rootObject = (JsonObject) jsonParser.parse(fileReader);
             JsonArray locArray = (JsonArray) rootObject.get("data");
